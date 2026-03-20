@@ -1,6 +1,7 @@
 package utils
 
 import (
+	"github.com/flipped-aurora/gin-vue-admin/server/model/yunrong"
 	"net"
 	"time"
 
@@ -142,6 +143,16 @@ func LoginToken(user system.Login) (token string, claims systemReq.CustomClaims,
 		NickName:    user.GetNickname(),
 		Username:    user.GetUsername(),
 		AuthorityId: user.GetAuthorityId(),
+	})
+	token, err = j.CreateToken(claims)
+	return
+}
+
+func LoginWithToken(user yunrong.YrUser) (token string, claims systemReq.CustomClaims, err error) {
+	j := NewJWT()
+	claims = j.CreateClaims(systemReq.BaseClaims{
+		ID:       user.ID,
+		Username: user.Username,
 	})
 	token, err = j.CreateToken(claims)
 	return
