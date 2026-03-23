@@ -79,6 +79,10 @@
   "/src/view/systemTools/sysError/sysError.vue": "SysError",
   "/src/view/systemTools/system/system.vue": "Config",
   "/src/view/systemTools/version/version.vue": "SysVersion",
+  "/src/view/yunrong/yrUser/yrUser.vue": "YrUser",
+  "/src/view/yunrong/yrUser/yrUserForm.vue": "YrUserForm",
+  "/src/view/zhinengtimanage/zhinengti/zhinengti.vue": "Zhinengti",
+  "/src/view/zhinengtimanage/zhinengti/zhinengtiForm.vue": "ZhinengtiForm",
   "/src/plugin/announcement/form/info.vue": "InfoForm",
   "/src/plugin/announcement/view/info.vue": "Info",
   "/src/plugin/email/view/index.vue": "Email"

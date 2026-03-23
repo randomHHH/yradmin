@@ -2,6 +2,7 @@ package service
 
 import (
 	"github.com/flipped-aurora/gin-vue-admin/server/service/example"
+	"github.com/flipped-aurora/gin-vue-admin/server/service/swiperimg"
 	"github.com/flipped-aurora/gin-vue-admin/server/service/system"
 	"github.com/flipped-aurora/gin-vue-admin/server/service/yunrong"
 	"github.com/flipped-aurora/gin-vue-admin/server/service/zhinengti"
@@ -16,4 +17,5 @@ type ServiceGroup struct {
 	YunrongServiceGroup         yunrong.ServiceGroup
 	ZhinengtiServiceGroup       zhinengti.ServiceGroup
 	ZhinengtimanageServiceGroup zhinengtimanage.ServiceGroup
+	SwiperimgServiceGroup       swiperimg.ServiceGroup
 }

@@ -2,6 +2,7 @@ package router
 
 import (
 	"github.com/flipped-aurora/gin-vue-admin/server/router/example"
+	"github.com/flipped-aurora/gin-vue-admin/server/router/swiperimg"
 	"github.com/flipped-aurora/gin-vue-admin/server/router/system"
 	"github.com/flipped-aurora/gin-vue-admin/server/router/yunrong"
 	"github.com/flipped-aurora/gin-vue-admin/server/router/zhinengti"
@@ -16,4 +17,5 @@ type RouterGroup struct {
 	Yunrong         yunrong.RouterGroup
 	Zhinengti       zhinengti.RouterGroup
 	Zhinengtimanage zhinengtimanage.RouterGroup
+	Swiperimg       swiperimg.RouterGroup
 }

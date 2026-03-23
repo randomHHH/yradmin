@@ -16,9 +16,14 @@ func initBizRouter(routers ...*gin.RouterGroup) {
 	{
 		yunrongRouter := router.RouterGroupApp.Yunrong
 		yunrongRouter.InitYrUserRouter(privateGroup, publicGroup)
-	} // 占位方法，保证文件可以正确加载，避免go空变量检测报错，请勿删除。
+	}
 	{
 		zhinengtimanageRouter := router.RouterGroupApp.Zhinengtimanage
 		zhinengtimanageRouter.InitZhinengtiRouter(privateGroup, publicGroup)
+	}
+	{
+		swiperimgRouter := router.RouterGroupApp.Swiperimg
+		swiperimgRouter.InitLunbotuRouter(privateGroup, publicGroup) // 占位方法，保证文件可以正确加载，避免go空变量检测报错，请勿删除。
+		swiperimgRouter.InitSwiperRouter(privateGroup, publicGroup)
 	}
 }
